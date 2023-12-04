@@ -157,8 +157,16 @@ nav ul li a{
     animation-delay: 0.5s;
 }
 .pattern img:nth-child(2) {
-    transform: rotate(65seg) translate(0px, -40px) scale(.8);
+    transform: rotate(65seg) translate(100px, -40px) scale(.8);
     animation-delay: 1.5s;
+}
+.pattern img:nth-child(3) {
+    transform: rotate(5seg) translate(0px, -200px) scale(.5);
+    animation-delay: 3.5s;
+}
+.pattern img:nth-child(4) {
+    transform: rotate(-75seg) translate(-100px, -10px) scale(.7);
+    animation-delay: 2.5s;
 }
 @keyframes move{
     100%{
@@ -167,14 +175,75 @@ nav ul li a{
         opacity: 0.3;
     }
 }
+header {
+    padding: 20px;
+}
 
-
-.app{
-    background: #000000;
+.boxquiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+.app {
+    background: #000000a1;
     border: rgb(236, 64, 236) solid 2px ;
     width: 90%;
     max-width: 600px;
     margin: 100x auto;
     border-radius: 10px;
     padding: 30px;
+    color: #f1f1f1;
+}
+
+.app h1{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 1px solid violet;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #f8f8f8;
+    font-size: 600;
+}
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid violet;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background: violet;
+    color: #f1f1f1;
+    border-radius: none;
+}
+
+#next-btn{
+    background: violet;
+    color: #ffff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+
+
+
 }
