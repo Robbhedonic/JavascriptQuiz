@@ -226,10 +226,14 @@ header {
     transition: all 0.3s;
 }
 
-.btn:hover{
+.btn:hover.btn:hover:not([disabled]){
     background: violet;
     color: #f1f1f1;
     border-radius: none;
+}
+
+.btn:disabled{
+    cursor: no-drop;
 }
 
 #next-btn{
@@ -246,4 +250,11 @@ header {
 
 
 
+}
+
+.correct{
+    background-color: rgb(3, 160, 3);
+}
+.incorrect {
+    background-color: rgb(236, 6, 6);
 }
