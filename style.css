@@ -253,8 +253,57 @@ header {
 }
 
 .correct{
-    background-color: rgb(3, 160, 3);
+    background-color: rgb(44, 159, 44);
+    border: none;
+    color: white;
 }
 .incorrect {
-    background-color: rgb(236, 6, 6);
+    background-color: rgb(212, 13, 13);
+    border: none;
+    color: white;
 }
+.high-score {
+    background-color: rgba(2, 245, 2, 0.092);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    border: solid 20px rgb(10, 147, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.medium-score {
+    background-color: rgba(192, 133, 22, 0.314);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    border: solid 20px rgb(206, 134, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.low-score {
+    background-color: rgba(239, 6, 6, 0.163);
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    border: solid 20px rgb(254, 0, 0);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
