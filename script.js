@@ -23,12 +23,12 @@ let btnIcon = document.getElementById("btnIcon");
 const questions = [
     
     {
-        question: "Is San Marino the old nation in the world?, Choose more that two answer.",
+        question: "Who created the computer",
         answers:[
-            {text: `It is San Marino`, correct:false},
-            {text: "No, it is Vatican", correct:true},
-            {text: "Japan", correct:false},
-            {text: "Brunei", correct:false},
+            {text: `Steven Jobs`, correct:false},
+            {text: "Charles Babbage", correct:true},
+            {text: "Bill Gates", correct:false},
+            {text: "Guido Van Rossum", correct:false},
         ]
     },
     {
