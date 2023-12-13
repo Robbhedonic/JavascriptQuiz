@@ -129,10 +129,10 @@ nav a {
     }
 } 
 
-::view-transition-group
+
 .toggle-btn{
     background-color: var(--background-color);
-    border: rgb(190, 64, 236)  solid 2px;
+    border: solid 2px rgb(190, 64, 236)  ;
     color: var(--text-color);
     display: flex;
     align-items: center;
