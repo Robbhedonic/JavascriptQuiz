@@ -23,7 +23,7 @@ let btnIcon = document.getElementById("btnIcon");
 const questions = [
     
     {
-        question: "Who created the computer",
+        question: "Who created the computer?",
         answers:[
             {text: `Steven Jobs`, correct:false},
             {text: "Charles Babbage", correct:true},
@@ -32,12 +32,12 @@ const questions = [
         ]
     },
     {
-        question: "Which is larget animal in the world?",
+        question: "Which country is the least visited in the world in 2023?",
         answers:[
-            {text: "Shark", correct:false},
-            {text: "Blue whale", correct:true},
-            {text: "Elephant", correct:false},
-            {text: "Giraffe", correct:false},
+            {text: "Brunei", correct:false},
+            {text: "Belize", correct:false},
+            {text: "Kazakhstan", correct:false},
+            {text: "Tuvalu", correct:true},
         ]
     },
     {
@@ -49,12 +49,12 @@ const questions = [
         ]
     },
     {
-        question: "Which is smallest country in the world?",
+        question: "what is the oldest civilization?",
         answers:[
-            {text: "Vatican city", correct:true},
-            {text: "Bhutan", correct:false},
-            {text: "Nepal", correct:false},
-            {text: "Sri Lanka", correct:false},
+            {text: "Sumerian", correct:true},
+            {text: "Minoan", correct:false},
+            {text: "Egyptian", correct:false},
+            {text: "Mesopotamia", correct:false},
         ]
     },
     {
@@ -67,10 +67,14 @@ const questions = [
         ]
     },
     {
-        question: "Is true that deepest lake is in Russia?",
+        question: "What colour can dogs see?",
         answers:[
-            {text: "False", correct:false},
-            {text: "True", correct:true},
+    
+            {text: "Blue pink and Blue", correct:false},
+            {text: "None", correct:false},
+            {text: "Yellow and blue violet", correct:true},
+            {text: "Orange and Yellow", correct:false},
+            
            
         ]
     },
@@ -82,28 +86,28 @@ const questions = [
         ]
     },
     {
-        question: "Which is largest desert in the world?",
+        question: "What was the largest empire in Pre-Columbian America",
         answers:[
-            {text: "Kalahari", correct:false},
-            {text: "Gobi", correct:false},
-            {text: "Sahara", correct:false},
-            {text: "Antarctica", correct:true},
+            {text: "Inca", correct:true},
+            {text: "Maya", correct:false},
+            {text: "Olmeca", correct:false},
+            {text: "Azteca", correct:false},
         ]
     },
     {
-        question: "Is San Marino the old nation in the world?",
+        question: "What country is inside another country",
         answers:[
-            {text: "It is San Marino", correct:false},
-            {text: "No, it is Vatican", correct:true},
-            {text: "Japan", correct:false},
-            {text: "Brunei", correct:false},
+            {text: "Eswatini", correct:false},
+            {text: "Uganda", correct:false},
+            {text: "Lesoto", correct:true},
+            {text: "Burundi", correct:false},
         ]
     },
      {
-        question: "Is Tuvalu the smallest continent in the world?",
+        question: "Is Scotland's official animal a unicorn?",
         answers:[
-            {text: "True", correct:false},
-            {text: "False", correct:true}
+            {text: "True", correct:true},
+            {text: "False", correct:false}
         ]
     }
   
@@ -187,12 +191,8 @@ function showScore(){
         resultt.classList.add("medium-score");
         pointsElement.innerHTML = `Between 51% and 75%,Good!`;
 
-    }else if(score<6){resultt.classList.add("low-score");
+    }else{resultt.classList.add("low-score");
         pointsElement.innerHTML = `Less that 51%, No Good!`;
-    
-    }else(score===0);{
-    pointsElement.removeAttribute;
-
     }
 }
 

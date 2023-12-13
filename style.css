@@ -249,13 +249,13 @@ header {
     color: white;
 }
 .high-score {
-    background-color: rgba(2, 245, 2, 0.092);
+    background-color: rgba(2, 245, 2, 0.163);
     padding: 20px;
     width: 200px;
     height: 200px;
     border-radius: 100px;
     display: flex;
-    border: solid 20px rgb(10, 147, 0);
+    border: solid 20px rgb(15, 141, 6);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -429,7 +429,7 @@ main{
 }
 .ring:nth-child(1){
     border-bottom-width: 8px;
-    border-color:  rgb(241, 62, 202);
+    border-color:  rgb(220, 98, 5);
     animation: rotate1 2s linear infinite;
 }
 .ring:nth-child(2) {
