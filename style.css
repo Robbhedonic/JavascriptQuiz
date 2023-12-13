@@ -482,8 +482,7 @@ main{
 footer{
    
     display: flex;
- flex-wrap: wrap;
-
+    flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
     height: 200px;
