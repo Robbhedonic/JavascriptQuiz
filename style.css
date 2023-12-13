@@ -112,7 +112,7 @@ nav a {
         width:70%;
         max-height:0;
         overflow: hidden;
-        background-color: #c6c6cf6e;
+        background-color: #c6c6cf20;
         border-radius: 30px;
     }
     label{
@@ -249,7 +249,7 @@ header {
     color: white;
 }
 .high-score {
-    background-color: rgba(2, 245, 2, 0.163);
+    background-color: rgba(2, 245, 2, 0.192);
     padding: 20px;
     width: 200px;
     height: 200px;
