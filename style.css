@@ -313,6 +313,7 @@ header {
 
 li{
     text-align: center;
+    list-style: none;
 }
 
 video{
@@ -402,27 +403,28 @@ main{
     display: flex;
    flex-wrap: wrap;
     
-    height: 100vh;
-    flex-direction: row;
+ 
+  
     justify-content: space-around;
     align-items: center;
    
 }
 .cont{
-    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
-    margin: 5%;
+    margin: 10%;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+
    
 }
 .ring{
-    width: 400px;
-    height: 400px;
+    width: 330px;
+    height: 330px;
     border: 0px solid white;
     border-radius: 90%;
     position: absolute;
@@ -476,4 +478,42 @@ main{
         transform: rotate(10deg) rotateY(130deg) rotateZ(360deg);
 
     }
+}
+footer{
+   
+    display: flex;
+ flex-wrap: wrap;
+
+    justify-content: space-around;
+    position: relative;
+    height: 200px;
+   
+    color: var(--text-color);
+    font-weight: 100;
+    margin: 1%;
+    border-radius: 20px;
+  
+    align-content: center;
+   
+}
+footer ul{
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    text-align: left;
+}
+.middle{
+    text-align: center;
+    align-items: center;
+
+}
+footer a{
+    text-decoration: none;
 }
