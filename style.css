@@ -401,9 +401,8 @@ video{
 
 main{
     display: flex;
-   flex-wrap: wrap;
-    
- 
+    flex-wrap: wrap;
+
   
     justify-content: space-around;
     align-items: center;
@@ -415,7 +414,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 1%;
-    margin: 10%;
+    margin: 9%;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -483,6 +482,7 @@ footer{
    
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-around;
     position: relative;
     height: 200px;
