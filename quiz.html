@@ -16,26 +16,47 @@
 <body>
 
    <header>
-        <nav>
     
-            <img class="logo" src="images/logonew.jpeg" alt="">
+    <nav>
+        <img class="logo" src="images/logonew.jpeg" alt="">
+        <div class="toggle-btn" id="btn">
+            <span id="btnText">Dark</span>
+            <img class="moons" src="images/download.png" id="btnIcon"></img>
+        
+        </div>
     
     
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Students Life</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="#">Contact</a></li>
+    
+        <label for="toggler"><i class="fa-solid fa-bars icons"></i></label>
+        <input type="checkbox" id="toggler" name="">
+        <div class="menu">
+            <ul class="list">
+                <li><a href="index.html"><i class="fa-solid fa-house icons">
+                            <p class="nav-p">Home</p>
+                        </i></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-school-circle-check icons">
+                            <p class="nav-p">Admission</p>
+                        </i></a></li>
+                <li><a href="#"><i class="fa-solid fa-graduation-cap icons">
+                            <p class="nav-p">Students Life</p>
+                        </i></a></li>
+                <li><a href="quiz.html"><i class="fa-solid fa-lightbulb icons"></i>
+                        <p class="nav-p">Quiz</p></i>
+                    </a></li>
+                <li><a href="#"><i class="fa-solid fa-address-book icons">
+                            <p class="nav-p">Contact</p>
+                        </i></a></li>
             </ul>
-            <div class="toggle-btn" id="btn">
-                <span id="btnText">Dark</span>
-                <img src="images/moon.png" id="btnIcon"></img>
     
-            </div>
-        </nav>
-   
-   </header>
+    
+        </div>
+        
+    
+    
+    
+    </nav>
+
+</header>
     <main class="boxquiz">
         <div class="app">
             <h1>Simple Quiz</h1>
@@ -45,8 +66,7 @@
                 <div id="answer-buttons">
                     <button class="btn">Answer 1</button>
                     <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
+                    <input type="checkbox" class="btn">
                 </div>
                 <button id="next-btn">Next</button>
 

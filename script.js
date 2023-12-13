@@ -10,16 +10,27 @@ let btnIcon = document.getElementById("btnIcon");
             btnText.innerHTML = "Light";
 
         } else {
-            btnIcon.src = "images/moon.png";
+            btnIcon.src = "images/download.png";
             btnText.innerHTML = "Dark";
 
         }
 
 
     }
+   
 
 
 const questions = [
+    
+    {
+        question: "Is San Marino the old nation in the world?, Choose more that two answer.",
+        answers:[
+            {text: `It is San Marino`, correct:false},
+            {text: "No, it is Vatican", correct:true},
+            {text: "Japan", correct:false},
+            {text: "Brunei", correct:false},
+        ]
+    },
     {
         question: "Which is larget animal in the world?",
         answers:[
@@ -71,15 +82,6 @@ const questions = [
         ]
     },
     {
-        question: "Which is smallest country in the world?",
-        answers:[
-            {text: "Vatican city", correct:true},
-            {text: "Bhutan", correct:false},
-            {text: "Nepal", correct:false},
-            {text: "Sri Lanka", correct:false},
-        ]
-    },
-    {
         question: "Which is largest desert in the world?",
         answers:[
             {text: "Kalahari", correct:false},
@@ -118,6 +120,7 @@ let score = 0;
 
 function startQuiz(){
     currentQuestionIndex = 0;
+    score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
@@ -177,17 +180,24 @@ function showScore(){
 
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
-    if(score > 7){
+     if(score > 7){
         resultt.classList.add("high-score");
         pointsElement.innerHTML = `More that 75%,Very Good!`;
     }else if(score >5 && score< 8){
         resultt.classList.add("medium-score");
         pointsElement.innerHTML = `Between 51% and 75%,Good!`;
 
-    }else{resultt.classList.add("low-score");
+    }else if(score<6){resultt.classList.add("low-score");
         pointsElement.innerHTML = `Less that 51%, No Good!`;
     
-    }}
+    }else(score===0);{
+    pointsElement.removeAttribute;
+
+    }
+}
+
+
+
     
 
 
@@ -195,7 +205,7 @@ function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
         showQuestion();
-    }else{
+    }else {
         showScore();
     }
 }
@@ -207,4 +217,6 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 })
+
+
 startQuiz();
