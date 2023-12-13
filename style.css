@@ -430,7 +430,7 @@ main{
 }
 .ring:nth-child(1){
     border-bottom-width: 8px;
-    border-color:  rgb(220, 98, 5);
+    border-color:  rgb(220, 170, 5);
     animation: rotate1 2s linear infinite;
 }
 .ring:nth-child(2) {
